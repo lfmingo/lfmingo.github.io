@@ -179,7 +179,8 @@
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h1 id="Ejemplo-codigo"><a href="#Ejemplo-codigo" class="headerlink" title="Ejemplo codigo"></a>Ejemplo codigo</h1><p>eaaaaaaaaaaaaaaaaaaaa sto es un ejemplo de codigo</p>
+        <h1 id="Ejemplo-codigo"><a href="#Ejemplo-codigo" class="headerlink" title="Ejemplo codigo"></a>Ejemplo codigo</h1><p>$$<br>\frac{\partial u}{\partial t} = h^2 \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2}\right)<br>$$</p>
+<p>eaaaaaaaaaaaaaaaaaaaa sto es un ejemplo de codigo</p>
 <a id="more"></a>
 <p>dadas </p>
 <hr>
@@ -353,7 +354,24 @@ jsonContent:
     
     <!-- CNZZ统计  -->
     
-    </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    </div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
     </body>
 </html>
 
